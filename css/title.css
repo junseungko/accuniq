@@ -1,0 +1,77 @@
+#title { 
+  height: 100%;
+  background-color: white;
+  max-width: 1720px;
+  margin: 0 auto;
+  border-radius: 0 0 30px 30px;
+  box-shadow: 0 0 10px #ccc;
+  min-height: 600px;
+  background-repeat: no-repeat;
+  background-position-y: 70%, 103%;
+  background-image: url(../img/accuniq.png), url(../img/titleimg.svg);
+  background-position-x: 82%, center;
+  background-size:35%, 100%;
+  position: relative;
+}
+#title .wrap {
+ 
+  height: 100%;
+}
+#title .wrap hgroup {
+  
+  padding-left: 100px !important;
+}
+#title .wrap hgroup h2 {
+  
+  color: #0059a9;
+  font-size: 15px;
+  animation-name: fliph2;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-direction: reverse;
+  backface-visibility: hidden;
+  width: fit-content;
+}
+@keyframes fliph2{
+  0%{
+    transform: rotateY(0deg);
+  }
+  100%{
+    transform: rotateY(90deg);
+  }
+}
+#title .wrap hgroup h3 {
+  
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: 66px;
+  animation-name: fliph3;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-direction: reverse;
+  backface-visibility: hidden;
+  width: fit-content;
+  animation-delay: 0.5s;
+}
+@keyframes fliph3{
+  0%{
+    transform: rotateY(0deg);
+  }
+  100%{
+    transform: rotateY(180deg);
+  }
+}
+#title::after{
+  content: "";
+  background-repeat: no-repeat;
+  background-position-y: 0%;
+  background-image: url(../img/woman.png);
+  background-position-x: 82%;
+  background-size:contain; 
+  width: 655px;
+  height: 877px;
+  display: block;
+  position: absolute;
+  right: 112px;
+  bottom: -146px;
+}

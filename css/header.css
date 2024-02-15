@@ -1,0 +1,118 @@
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  transition: 1s;
+  top: 0;
+  height: 90px;
+  display: flex;
+  align-items: center;
+}
+header div.wrap {
+  
+  align-items: center;
+}
+header div.wrap h1 {
+  
+}
+header div.wrap h1 a { 
+  font-size: 0;
+  background-image: url(../img/logo.svg);
+  width: 45px;
+  height: 35px;
+  display: block;
+}
+header div.wrap h1 a::after{ 
+  content: "";  
+  width: 140px;
+  height: 35px;
+  display: inline-block;
+  background-image: url(../img/logotext.svg);
+  margin-left: 45px;
+  padding-left: 10px;
+  background-repeat: no-repeat;
+  background-position-x: 10px;
+  background-size: 91%;
+  background-position-y: 8px;
+}
+
+header div.wrap ul.gnb {
+  
+  transition: 0.5s;
+  opacity: 0;
+}
+header div.wrap ul.gnb li {
+  
+}
+header div.wrap ul.gnb li a {
+  padding: 10px 20px;
+}
+header div.wrap ul.gnb li a:hover {
+  color: orange;
+}
+header div.wrap div.right {
+  
+  gap: 35px;
+  font-size: 14px;
+  align-items: center;
+}
+header div.wrap div.right ul.lang {
+  
+}
+header div.wrap div.right ul.lang li {
+  
+}
+header div.wrap div.right ul.lang li a {
+  
+  padding: 10px 10px;
+}
+header div.wrap div.right ul.lang li:nth-child(1) {
+  
+}
+header div.wrap div.right ul.lang li:nth-child(1) a {
+  
+  color: #ccc;
+}
+header div.wrap div.right > a.ham {
+  
+  /*! font-size: 0; */
+  /*! width: 35px; */
+  /*! height: 7px; */
+  /*! border-top: 2px solid #333; */
+  /*! border-bottom: 2px solid #333; */
+}
+header a.updown{
+  
+  width: 70px;
+  height: 30px;
+  display: block;
+  background-image: url(../img/arrowupdown.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-size: 0;
+  position: absolute;
+  right: 50px;
+  bottom: -30px;
+  text-align: center;
+  background-color: #eee;
+  line-height: 30px;
+  border-radius: 0 0 10px 10px;
+  background-position: center;
+}
+header a.updown::before{
+  content:"";
+  position: absolute;
+  right: -50px;
+  top: 0;
+  border-top: 1px solid #ccc;
+  width: 100vw;
+}
+.opacity1{
+  opacity: 1 !important;
+}
+.up{
+  top: -90px;
+}
+.upbg{
+  background-image: url(../img/arrowdown.svg) !important;
+}
